@@ -1,5 +1,5 @@
 # Ex.No: 1  Implementation of Breadth First Search 
-### DATE:12-06-2024                                                                            
+### DATE:12-02-2024                                                                            
 ### REGISTER NUMBER : 212221220040
 ### AIM: 
 To write a python program to implement Breadth first Search.
@@ -15,29 +15,35 @@ To write a python program to implement Breadth first Search.
 
 ### Program:
 # Using a Python dictionary to act as an adjacency list
-graph = {
-  '5' : ['3','7'],
-  '3' : ['2', '4'],
-  '7' : ['8'],
-  '2' : [],
-  '4' : ['8'],
-  '8' : []
-}
-visited = set() # Set to keep track of visited nodes of graph.
-def dfs(visited,graph,node):  #function for dfs 
-    if node not in visited:
-        	print (node)
-        	visited.add(node)
-        	for neighbour in graph[node]:
-        	    dfs(visited,graph,neighbour)
-# Driver Code
-print("Following is the Depth-First Search")
-dfs(visited,graph,'5')
 ~~~
+graph = {
+ '5' : ['3','7'],
+ '3' : ['2', '4'],
+ '7' : ['8'],
+ '2' : [],
+ '4' : ['8'],
+ '8' : []
+ }
+visited = [] 
+queue = []     
+def bfs(visited,graph,node): 
+ 	 visited.append(node)
+ 	 queue.append(node)
+ 	 while queue:          
+ 	     m = queue.pop(0) 
+ 	     print (m) 
+ 	     for neighbour in graph[m]:
+ 	         if neighbour not in visited:
+ 	             visited.append(neighbour)
+ 	             queue.append(neighbour)
+
+
+print("Following is the Breadth-First Search")
+bfs(visited, graph, '5')
 ~~~
 ### Output:
-![Screenshot 2024-02-12 160705](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/9410902b-2e10-424d-b3dc-714d26259aff)
 ~~~
+![Screenshot 2024-02-12 161331](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/aec16269-9317-4640-acff-e5ad796b80fb)
 ~~~
 ### Result:
 Thus the breadth first search order was found sucessfully.
