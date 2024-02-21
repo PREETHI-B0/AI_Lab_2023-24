@@ -12,9 +12,8 @@ To write a python program to implement Breadth first Search.
 6.  Creating loop to print the visited node.
 7.   Call the bfs function by passing arguments visited, graph and starting node.
 8.   Stop the program.
-
 ### Program:
-# Using a Python dictionary to act as an adjacency list
+Using a Python dictionary to act as an adjacency list
 ~~~
 graph = {
  '5' : ['3','7'],
@@ -36,15 +35,11 @@ def bfs(visited,graph,node):
  	         if neighbour not in visited:
  	             visited.append(neighbour)
  	             queue.append(neighbour)
-
-
 print("Following is the Breadth-First Search")
 bfs(visited, graph, '5')
 ~~~
 ### Output:
-![Screenshot 2024-02-12 161331](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/d3000fea-1aec-4e57-bc6d-28ad9f7c1407)
-
-
+![Screenshot 2024-02-12 160705](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/82006233-9cb0-4312-9e05-1f5e261f186d)
 ### Result:
 Thus the breadth first search order was found sucessfully.
-~~~
+
