@@ -33,12 +33,7 @@ Driver Code
 print("Following is the Depth-First Search")
 dfs(visited,graph,'5')
 ~~~
-
-
 ### Output:
-![Screenshot 2024-02-12 160705](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/dfced74d-8eb1-40cc-9310-b77f5282ae08)
-
-
-
+![Screenshot 2024-02-12 160705](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/5d7bab7c-4c9f-45fb-b10c-fb5e14ee36c4)
 ### Result:
 Thus the depth first search order was found sucessfully.
