@@ -39,7 +39,7 @@ print("Following is the Breadth-First Search")
 bfs(visited, graph, '5')
 ~~~
 ### Output:
-![Screenshot 2024-02-12 160705](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/82006233-9cb0-4312-9e05-1f5e261f186d)
+![Screenshot 2024-02-12 161331](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/0bd964f5-f230-44d5-9d87-df82c8968782)
 ### Result:
 Thus the breadth first search order was found sucessfully.
 
