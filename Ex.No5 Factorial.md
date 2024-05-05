@@ -16,6 +16,6 @@ factorial(0,1).factorial(A,B) :-
            factorial(C,D),
            B is A*D.
 ### Output:
-![Screenshot 2024-03-11 155945](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/ee3a0960-458f-4340-aa8b-809a2257f755)
+![311674545-ee3a0960-458f-4340-aa8b-809a2257f755](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/5573c7ea-50a5-4197-83dd-ccd990cd546c)
 ### Result:
 Thus the factorial of given number was found by logic programming. 
