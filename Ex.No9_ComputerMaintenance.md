@@ -12,8 +12,8 @@ Write a Prolog program to build a computer maintenance expert system.
 6. Similarly define rules for all faults.
 7. Define facts for system problems.
 8. Find the fault of computer by passing query to system.
-### Program:
 ~~~
+### Program:
 fault(printer_head) :-
 	problem(not_printing),
 	problem(missing_dots),
