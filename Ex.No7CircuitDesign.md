@@ -5,7 +5,6 @@ REGISTER NUMBER : 212221220040
 To write a logic program to design a circuit like half adder, half subtractor and full adder .
 
 ## Algorithm:
-~~~
 1.Start the Program
 2.Design a AND gate logic if both inputs are 1 then output is 1.
 3.Design a OR gate logic if any one of input is 1 then output is 1.
@@ -14,7 +13,6 @@ To write a logic program to design a circuit like half adder, half subtractor an
 6.Design a half adder and half subtractor using the rules.
 7.Test the logic.
 8.Stop the program.
-~~~
 ## Program:
 ~~~
 and(0,0,0).
