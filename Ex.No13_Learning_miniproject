@@ -52,8 +52,7 @@ except sr.RequestError as e:
 for line in text.splitlines():
     print(line)
 ~~~
-### Output:
-
+### OUTPUT
 
 ### Result:
 Thus the system was trained successfully and the prediction was carried out.
