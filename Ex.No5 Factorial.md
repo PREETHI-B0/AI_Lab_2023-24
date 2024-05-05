@@ -10,8 +10,7 @@ To  write  a logic program for finding the factorial of given number using SWI-P
 4.   b)	factorial of number greater than 0 obtained by recursively calling the factorial    function.
 5. STEP 3: Run the program  to find answer of  query.Stop the program.
 ### Program:
-factorial(0,1).
-factorial(A,B) :-  
+factorial(0,1).factorial(A,B) :-  
            A > 0, 
            C is A-1,
            factorial(C,D),
