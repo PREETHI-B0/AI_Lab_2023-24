@@ -11,9 +11,9 @@ Step 4: Specify the actions GOTO, CLIMB, PUSH-BOX, GET-KNIFE, GRAB-BANANAS in Mo
 Step 5:   Define a problem for Monkey Banana problem.<br> 
 Step 6:  Obtain the plan for given problem.<br> 
 Step 7: Stop the program.<br> 
+~~~
 ### Program:
 Domain.pddl:
-~~~
 (define (domain monkey)	       
   (:requirements :strips)
    (:constants monkey box knife bananas glass waterfountain)
@@ -64,8 +64,8 @@ Domain.pddl:
 	     :effect (haswater)))
 ~~~
 ### Input 
-Problem:
 ~~~
+Problem:
 (define (problem pb1)
     	(:domain monkey)
   	(:objects p1 p2 p3 p4 bananas monkey box knife)
