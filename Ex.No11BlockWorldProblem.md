@@ -13,11 +13,10 @@ Step 6:  In putdown action, Robot arm place the block on table. Precondition is 
 Step 7 : In un-stack action, Robot arm pick the block on some block. Precondition is Block is on another block and no other block on specified block and arm-hand empty.<br>
 Step 8 : In stack action, Robot arm place the block on under block. Precondition is Block holded by robot arm and no other block on under block.<br>
 Step 9 : Define a problem for block world problem.<br> 
-Step 10 : Obtain the plan for given problem.<br> 
-     
+Step 10 : Obtain the plan for given problem.<br>      
+~~~
 ### Program:
 domain.pddl
-~~~
 (define (domain blocksworld)
 (:requirements :strips :equality)
 (:predicates (clear ?x)
@@ -47,8 +46,8 @@ domain.pddl
                (not (on ?ob ?underob)) (not (clear ?ob)) (not (arm-empty)))))
 ~~~
 ## Input
-Problem 1: Problem.pddl
 ~~~
+Problem 1: Problem.pddl
 (define (problem pb1)
    (:domain blocksworld)
    (:objects a b)
@@ -58,8 +57,8 @@ Problem 1: Problem.pddl
 ### Output/Plan:
 ![image](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/bf683d82-e49a-4699-a8b9-770827808dc2)
 ## Input
-Problem 2: Problem2.pddl
 ~~~
+Problem 2: Problem2.pddl
 (define(problem pb3)
 	   (:domain blocksworld)
 	   (:objects a b c)
@@ -69,6 +68,5 @@ Problem 2: Problem2.pddl
 ~~~
 ### Output/Plan:
 ![image](https://github.com/PREETHI-B0/AI_Lab_2023-24/assets/136311079/6ea553ef-34d2-492d-abca-1da3eeaaefab)
-
 ### Result:
 Thus the plan was found for the initial and goal state of block world problem.
