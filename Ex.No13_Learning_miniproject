@@ -52,7 +52,20 @@ except sr.RequestError as e:
 for line in text.splitlines():
     print(line)
 ~~~
+~~~
 ### OUTPUT
-
+Collecting SpeechRecognition
+  Downloading SpeechRecognition-3.10.4-py2.py3-none-any.whl (32.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 32.8/32.8 MB 39.6 MB/s eta 0:00:00
+Requirement already satisfied: requests>=2.26.0 in /usr/local/lib/python3.10/dist-packages (from SpeechRecognition) (2.31.0)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.10/dist-packages (from SpeechRecognition) (4.11.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->SpeechRecognition) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->SpeechRecognition) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->SpeechRecognition) (2.0.7)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->SpeechRecognition) (2024.2.2)
+Installing collected packages: SpeechRecognition
+Successfully installed SpeechRecognition-3.10.4
+the stale smell of old beer lingers it takes heat to bring out the odor a cold dip restores health and zest a salt pickle taste fine with ham tacos al pastor are my favorite a zestful food is the hot cross bun
+~~~
 ### Result:
 Thus the system was trained successfully and the prediction was carried out.
