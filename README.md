@@ -1,7 +1,71 @@
-# AI_Lab_2023-24
-LAB EXPERIMENTS 
-REQUIREMENTS 
-1. PYHTON
-2. SWI-PROLOG
-3. PDDL 0R PDDL EDITOR ONLINE
-4. JUPITER OR COLAB NOTEBOOK 
+# Ex.No: 113 Learning – Use Supervised Learning  
+### DATE:05-05-2024                                                                            
+### REGISTER NUMBER : 212221220040
+### AIM: 
+To write a program to transcribe speech from an audio file into text using machine learning. Specifically, the program utilizes the Google Speech Recognition service to convert spoken language into written text, showcasing the practical application of machine learning in speech processing tasks.
+###  Algorithm:
+Step 1: Import Libraries
+Step 2: Load Audio File
+Step 3: Create Recognizer Instance
+Step 4: Record Audio
+Step 5: Speech Recognition
+Step 6: Exception Handling
+Step 7: Convert Speech to Text
+Step 8: Output Transcribed Text
+Step 9: Finalize
+Step 10: End
+Step 11: Import the necessary libraries like SpeechRecognition.
+Step 12: Load the audio file.
+Step 13: Create an instance of the Recognizer class.
+Step 14: Use the `record()` method to capture audio from the file.
+Step 15: Apply speech recognition using the `recognize_google()` method.
+Step 16: Handle possible errors like unclear speech or network issues.
+Step 17: Convert the recognized speech into text.
+Steps 18: Print or store the transcribed text.
+Step 19: Close any resources.
+Step 20: End.
+~~~
+### Program:
+!pip install SpeechRecognition  # If you're running this in a Jupyter notebook
+
+import speech_recognition as sr
+
+# Assign a string variable "file" with the name of the audio file that you want to transcribe.
+file = "/content/harvard.wav"
+
+# Create an instance of the Recognizer class called "r".
+r = sr.Recognizer()
+
+# Use the AudioFile() method of sr to create an AudioFile object with the audio file name passed as an argument.
+with sr.AudioFile(file) as source:
+    audio = r.record(source)
+
+# Use the recognize_google() method of r to transcribe the audio data stored in the "audio" variable.
+try:
+    text = r.recognize_google(audio)
+except sr.UnknownValueError:
+    print("Not clear")
+except sr.RequestError as e:
+    print("Couldn't get results from Google Speech Recognition service; {0}".format(e))
+
+# Print the text in the next lines.
+for line in text.splitlines():
+    print(line)
+~~~
+~~~
+### OUTPUT
+Collecting SpeechRecognition
+  Downloading SpeechRecognition-3.10.4-py2.py3-none-any.whl (32.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 32.8/32.8 MB 39.6 MB/s eta 0:00:00
+Requirement already satisfied: requests>=2.26.0 in /usr/local/lib/python3.10/dist-packages (from SpeechRecognition) (2.31.0)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.10/dist-packages (from SpeechRecognition) (4.11.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->SpeechRecognition) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->SpeechRecognition) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->SpeechRecognition) (2.0.7)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests>=2.26.0->SpeechRecognition) (2024.2.2)
+Installing collected packages: SpeechRecognition
+Successfully installed SpeechRecognition-3.10.4
+the stale smell of old beer lingers it takes heat to bring out the odor a cold dip restores health and zest a salt pickle taste fine with ham tacos al pastor are my favorite a zestful food is the hot cross bun
+~~~
+### Result:
+Thus the system was trained successfully and the prediction was carried out.
